@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动是适配，让用户不能自行缩放处理 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <!-- <%= BASE_URL %> 静态资源的根目录 -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/common.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>libs/swiper-4.1.0.min.css">
+    <script src="<%= BASE_URL %>libs/swiper-4.1.0.min.js"></script>
     <title>miaomiao</title>
   </head>
   <body>

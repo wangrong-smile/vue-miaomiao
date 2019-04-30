@@ -1,23 +1,8 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    
+    <!-- 切换路由的时候，每次切换的时候都会重新渲染页面，这样会影响性能，利用keep-alive 可以做一个缓存的操作  -->
+    <keep-alive>
+        <router-view/>
+    </keep-alive>
 </template>
 
-<script>
-export default {
-  name: 'App'
-}
-</script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
